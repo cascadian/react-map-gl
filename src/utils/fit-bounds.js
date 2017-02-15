@@ -22,7 +22,7 @@
 // down mapbox-gl to a specific major, minor, and patch version.
 import Transform from './transform';
 import Point from 'point-geometry';
-import LngLatBounds from '@cascadian/mapbox-gl/lib/utils/lng_lat_bounds';
+import LngLatBounds from 'mapbox-gl/js/utils/lng_lat_bounds';
 
 /**
  * Returns map settings {latitude, longitude, zoom}

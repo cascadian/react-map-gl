@@ -28,7 +28,6 @@
     "flow-remove-types": "^1.1.2",
     "glob": "^7.1.1",
     "global": "^4.3.0",
-    "mapbox-gl": "0.32.1",
     "pure-render-decorator": "^1.1.0",
     "svg-transform": "0.0.3",
     "viewport-mercator-project": "^2.0.1"
@@ -62,6 +61,7 @@
   },
   "scripts": {
     "build": "babel src -d dist --copy-files --source-maps inline",
+    "build-watch": "babel src -d dist --copy-files --source-maps inline --watch",
     "start": "budo ./example/main.js --live --open --port 9966 -- -t babelify -t envify",
     "lint": "eslint src example test",
     "test": "npm run lint && browserify -t babelify -t envify test/index.js | testron",
@@ -78,7 +78,8 @@
   ],
   "peerDependencies": {
     "immutable": "^3.7.6",
-    "react": "0.14.x - 15.x"
+    "react": "0.14.x - 15.x",
+    "mapbox-gl": "0.32.1"
   },
   "engines": {
     "node": ">= 4",
